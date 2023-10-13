@@ -7,7 +7,8 @@
     "information": "^0.0.1",
     "mongodb": "^6.1.0",
     "mongoos": "^0.0.1-security",
-    "mongoose": "^7.6.1"
+    "mongoose": "^7.6.1",
+    "toml": "^3.0.0"
   },
   "devDependencies": {
     "http-proxy-middleware": "^2.0.6",
