@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.main{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.page_1{
+    color: #fff;
+    background: url(./image/Blue\ Nature\ Documentary\ Film\ YouTube\ Thumbnail.png)  no-repeat;
+
+    height: 100%;
+}
+.page_1:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 550px;
+    height: 550px;
+    transform: rotate(-10deg);
+    background: url(./image/scissors.png) no-repeat;
+    background-size: 480px;
+    animation: moveAnimation 3s;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    line-height: 200px;
+}
+h1{
+    font-family: 'Cheque';
+    font-size: 150px;
+    font-weight: 550;
+    color: #fff;
+    text-shadow: 0 0 5px #fff; 
+    -webkit-text-stroke: 1px #fff;
+    animation: shadow 3s, tittle 2s;
+}
+h1:before{
+    content: 'the best';
+    position: absolute;
+    color: #00FF8C;
+    transform: translate(-1%, 2%);
+    opacity: 0.3;
+    animation:  tittle1 3s;
+}
+.introduction>h2{
+    position: relative;
+    font-family: 'Norwester';
+    word-spacing: 10px;
+    font-size: 150px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 3px 3px 10px #ffffff79;
+    animation: tittle 3s;
+}
+
+.introduction>h2:before{
+    content: 'BARBER SHOP';
+    position: absolute;
+    transform: translate(-1%, 2%);
+    opacity: 0.3;
+    animation:  tittle1 4s;
+}
+@keyframes shadow{
+    0%{
+        text-shadow: 0 0 0 #fff;
+    }
+    100%{
+        text-shadow: 0 0 5px #fff; 
+        -webkit-text-stroke: 1px #fff;
+    }
+}
+@keyframes tittle{
+    0%{
+        transform: translate(-100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+@keyframes tittle1{
+    0%{
+        transform: translate(-100%);
+        text-shadow: 0 0 100px #ffffff75;
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;  
+    }
+    100%{
+        transform: translate(-1%, 2%);
+    }
+}
+
+
+@font-face {
+    font-family: 'Norwester';
+    src: url('./font-family/norwester.otf');
+}
+@font-face {
+    font-family: 'Cheque'; /* Give your font a name */
+    src: url('./font-family/TTF/Cheque-Regular.ttf');
+}
+
+
+@keyframes moveAnimation{
+    from{
+        transform: rotate(-30deg);
+        top: 100%;
+        opacity: 0;
+    }
+    to{
+        top: 10%;
+        opacity: 1;
+    }
+}
+
+
+.button_block{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 70%;
+    left: 10%;
+    width: 40%;
+    min-width: 500px;
+}
+.button_block>button{
+    width: 45%;
+    padding: 30px 0 30px 30px;
+    text-align: center;
+    letter-spacing: 20px;
+    font-size: 40px;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 30rem;
+    background: rgb(53,41,150); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(53,41,150,1) 0%, #00ff8cd6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(53,41,150,1) 0%,#00ff8cb9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(53,41,150,1) 0%,#00ff8cbc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#352996', endColorstr='#b61313',GradientType=1 ); /* IE6-9 */
+    animation: buttonSnimation 5s infinite;
+}
+.button_block>button:active{
+    transform: scale(0.7);
+    background: rgb(53,41,150); /* Old browsers */
+    background: -moz-linear-gradient(left,  rgba(54, 41, 150, 0.7) 0%, rgba(182, 19, 19, 0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(54, 41, 150, 0.7) 0%, rgba(182, 19, 19, 0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(54, 41, 150, 0.7) 0%, rgba(182, 19, 19, 0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#352996', endColorstr='#b61313',GradientType=1 ); /* IE6-9 */
+}
+footer{
+    display: none;
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 70%;
+    justify-content: center;
+
+}
+footer>img{
+    display: block;
+    position: absolute;
+    top: 15%;
+    width: 100px;
+    animation: sccissors 3s;
+}
+@keyframes sccissors {
+    0%{
+        top: 100%;
+    }
+    100%{
+        top: 15%;
+    }
+}
+
+@keyframes buttonSnimation{
+    0%{
+       box-shadow: 0 0 30px rgba(53,41,150,1); 
+    }
+    90%{
+        box-shadow: 0 0 30px rgba(182, 19, 19, 0.7); 
+    }
+    100%{
+        box-shadow: 0 0 30px rgba(53,41,150,1); 
+    }
+}
