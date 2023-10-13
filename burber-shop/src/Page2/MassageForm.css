@@ -240,15 +240,43 @@ form>p>input:focus{
     }
 }
 @media screen and (max-width: 500px) {
-    form>p{
-        font-size: 20px;
+    form{
+        position: absolute;
+        width: 80%;
+        top: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 70%;
+        overflow: visible;
+    }
+    .Text{
+        display: none;
     }
     form>p>textarea{
         padding: 3px;
-        width: 50%;
+        width: 100%;
+        margin: 0;
     }
     form>p>input{
+        margin: 0px;
         padding: 5px;
-        width: 50%;
+        width: 100%;
     }
 }
+@media screen and (max-width: 500px) {
+    form{
+        align-items: center;
+    }
+    form>p>textarea{
+        padding: 3px;
+        width: 100%;
+        margin: 0;
+    }
+    form>p>input{
+        margin: 0px;
+        padding: 5px;
+        width: 100%;
+    }
+}
+

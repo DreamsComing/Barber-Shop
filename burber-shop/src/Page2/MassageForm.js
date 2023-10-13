@@ -85,10 +85,10 @@ console.log('Button disabled:', buttonDisability);
         </button>
         <form onSubmit={handleSubmit}>
           <p>
-            Name: <input name="name" onChange={handleChange} value={formData.name} />
+          <span className='Text'>Name:</span>  <input name="name" onChange={handleChange} value={formData.name} />
           </p>
           <p>
-            SpecialOrder:
+           <span className='Text'>SpecialOrder:</span> 
             <textarea
               name="SpecialOrder"
               onChange={handleChange}
@@ -96,10 +96,10 @@ console.log('Button disabled:', buttonDisability);
             />
           </p>
           <p>
-            E-mail: <input name="Email" onChange={handleChange} value={formData.Email} />
+          <span className='Text'>E-mail:</span> <input name="Email" onChange={handleChange} value={formData.Email} />
           </p>
           <p>
-            Phone Number: +1
+          <span className='Text'>Phone Number: +1</span>
             <input
               type="text"
               name="PhoneNumber"
