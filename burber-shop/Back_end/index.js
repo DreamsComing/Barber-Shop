@@ -8,7 +8,7 @@ app.use(cors())
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/BarberShop', {
+mongoose.connect('mongodb://127.0.0.1:27017/BarberShop', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

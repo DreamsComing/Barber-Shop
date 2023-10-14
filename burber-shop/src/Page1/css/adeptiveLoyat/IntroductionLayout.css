@@ -178,7 +178,7 @@
 }
 @media screen and (max-width: 450px){
     .introduction>h1,.introduction>h2{
-        font-size: 50px;
+        font-size: 40px;
     }
     .button_block{
         left: 0%;
@@ -202,15 +202,12 @@
 }
 @media screen and (max-width: 350px){
     .introduction>h1,.introduction>h2{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 @media screen and (max-width: 300px){
     .introduction{
         line-height: 70px;
-    }
-    .introduction>h1,.introduction>h2{
-        font-size: 30px;
     }
     .button_block{
         left: 20%;
@@ -220,6 +217,9 @@
     .introduction{
         top: 20%;
         line-height: 50px;
+    }
+    .introduction>h1,.introduction>h2{
+        font-size: 10px;
     }
     .introduction>h1,.introduction>h2{
         font-size: 25px;
