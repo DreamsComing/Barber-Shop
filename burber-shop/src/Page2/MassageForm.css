@@ -175,7 +175,7 @@ form>p>input:focus{
         margin-bottom: 15%;
     }
     .cancel{
-        display: block;
+        display: inline;
         position: absolute;
         top: 5%;
         left: 3%;

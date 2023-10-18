@@ -2,6 +2,7 @@
 import React, { useState, useEffect} from 'react';
 import './MassageForm.css';
 
+
 function MassageForm({ toggleFormOff }) {
   const [formData, setFormData] = useState({
     name: '',
@@ -50,7 +51,7 @@ function MassageForm({ toggleFormOff }) {
     e.preventDefault();
     try {
       // Send formData to the backend API using fetch or Axios
-      const response = await fetch(`${apiUrl}/submit-order`, {
+      const response = await fetch(`${apiUrl}/submit-Order`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -62,9 +63,11 @@ function MassageForm({ toggleFormOff }) {
         alert('Sended , wait for answer to your E-mail')
         setFormSubmitted(true)
         
+        
        // You can show a success message to the user here if needed
       } else {
         console.log('Error sending the order to the server.');
+        alert('work')
         // You can show an error message to the user here if needed
       }
     } catch (error) {
