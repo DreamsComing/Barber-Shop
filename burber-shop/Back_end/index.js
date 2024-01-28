@@ -8,7 +8,7 @@ app.use(cors())
 
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://maksymwsd:testing123@cluster0.iqmfhbe.mongodb.net/', {
+mongoose.connect('mongodb+srv://maksymwsd:t123@cluster0.iqmfhbe.mongodb.net/test', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -40,7 +40,7 @@ app.post('/submit-order', async (req, res) => {
   }
 });
 
-const PORT = process.env.PORT || 3003;
+const PORT = 8080;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

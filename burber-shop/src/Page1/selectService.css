@@ -1,0 +1,114 @@
+.selectService{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #1f1e1e;
+}
+
+.blockSelectService{
+    display: flex;
+    background-color: #bdbcbc;
+    width: 40%;
+    height: 23%;
+    border-radius: 0 0 3rem 3rem;
+}
+.blockSelectService>h3{
+    text-align: left;
+    margin-top: 17%;
+    margin-left: 3%;
+}
+.Intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 1%;
+    left: 30%;
+    width: 23%;
+}
+.Intro>p{
+    font-size: 15px;
+    font-weight: 550;
+    letter-spacing: 3px;
+}
+.BlockLogo{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.BlockLogo>img{
+    width: 100%;
+}
+
+
+.services{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    width: 45%;
+}
+.Service{
+    background-color: #bdbcbc;
+    border-radius: 1rem;
+    padding: 0 10px;
+}
+.TypeOfService{
+    display: flex;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 20px;
+    justify-content: space-between;
+}
+.price{
+    color: rgb(1, 101, 1);
+    font-weight: 700;
+}
+.addService{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+    font-size: 23px;
+    font-weight: 100;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.priceBlock{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+.priceBlock>button{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    border-radius: 0.5rem;
+    border: none;
+}
+.priceBlock>button:hover{
+    background-color: #ffffff3a;
+    border: 1.5px solid #000;
+
+}
+.priceBlock>p{
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
